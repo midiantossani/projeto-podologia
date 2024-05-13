@@ -90,47 +90,6 @@ h2 + p,
 }
 
 
-/* .index::before {
-    content: '';
-    position: absolute;
-    top: 20rem;
-    bottom: 0;
-    left: 5rem;
-    width: 50%;
-    height: 100%;
-    background-image: url(img/folhatropical.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
-@media (min-width:480px) and (max-width:760px) {
-    .index::before {
-    content: '';
-    position: absolute;
-    top: 20rem;
-    bottom: 0;
-    left: 1rem;
-    width: 50%; 
-    background-image: url(img/folhatropical.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    
-    }
-
-    /* .index::after {
-    content: '';
-    position: absolute;
-    top: 50rem;
-    bottom: -25rem;
-    right: -5rem;
-    width: 50%;
-    background-image: url(img/folha.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top right;
-    overflow: hidden;
-    } 
-} */
 
 .Sobre {
     margin-top: 10rem;
