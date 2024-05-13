@@ -78,7 +78,7 @@ main {
 h1, h2 {
     color: var(--light-green);
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Italiana';
     margin-bottom: 5rem;
 }
@@ -87,23 +87,131 @@ h1 + p,
 h2 + p,
 .Sobre p {
     color: #303030;
+    font-size: 1.2rem;
+}
+
+.index {
+    position: relative;
 }
 
 
+ .index::before {
+    content: '';
+    position: absolute;
+    top: -4rem;
+    bottom: 0;
+    left: -7rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folhatropical.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ .index::after {
+    content: '';
+    position: absolute;
+    top: 30rem;
+    bottom: 0rem;
+    right: -6rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    overflow: hidden;
+} 
+
+@media (min-width:480px) and (max-width:760px) {
+    .index::before {
+    content: '';
+    position: absolute;
+    top: 20rem;
+    bottom: 0;
+    left: 1rem;
+    width: 50%; 
+    background-image: url(img/folhatropical.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+    }
+
+    .index::after {
+    content: '';
+    position: absolute;
+    top: 50rem;
+    bottom: -25rem;
+    right: -5rem;
+    width: 50%;
+    background-image: url(img/folha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    overflow: hidden;
+    } 
+} 
+
 .Sobre {
     margin-top: 10rem;
+    position: relative;
+}
+
+.Sobre::before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    bottom: 0rem;
+    left: -6rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-y: hidden;
 }
 
 .Procedimentos {
     height: max-content;
     margin-top: 10rem;
+    position: relative;
     
 }
+
+.Procedimentos::before {
+    content: '';
+    position: absolute;
+    top: -7rem;
+    bottom: 0rem;
+    right: -2rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha2.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+.Procedimentos::after {
+    content: '';
+    position: absolute;
+    top: 9rem;
+    bottom: 0rem;
+    right: -2rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/Vector.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    z-index: 0;
+}
+
 
 .div-card  {
     display: grid;
     grid-template-columns: 1fr; /* Mostra os cards em uma única coluna */
     gap: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .card {
@@ -115,10 +223,11 @@ h2 + p,
     box-shadow: 1px 1px 0px 1px rgba(75, 75, 75, 0.493);
     background-color: var(--main-brown);
     overflow: hidden;
+    
 }
 
 .card h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--main-color);
     font-weight: bold;
     margin: 0;
@@ -156,8 +265,28 @@ h2 + p,
 
 .footer {
     margin-top: 10rem;
+    position: relative;
+    height: 40vh;
+}
+
+.footer h2 {
+    margin-bottom: 2rem;
 }
 
 .footer p {
     text-align: center;
 }
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 8rem;
+    left: -3rem;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Group\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    
+ }
