@@ -291,12 +291,15 @@ h2 + p,
     
  }
 
- .footer div a {
+ .footer a {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
     text-decoration: none;
-    color: var(--light-green);
-    
+    color: var(--light-green);    
+ }
+
+ .footer a:hover {
+    color: #303030;
  }
