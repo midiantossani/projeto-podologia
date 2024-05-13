@@ -90,7 +90,7 @@ h2 + p,
 }
 
 
-.index::before {
+/* .index::before {
     content: '';
     position: absolute;
     top: 20rem;
@@ -110,7 +110,7 @@ h2 + p,
     top: 20rem;
     bottom: 0;
     left: 1rem;
-    width: 50%; /* largura da imagem de fundo na lateral esquerda */
+    width: 50%; 
     background-image: url(img/folhatropical.png);
     background-repeat: no-repeat;
     background-size: auto;
@@ -129,8 +129,8 @@ h2 + p,
     background-size: contain;
     background-position: top right;
     overflow: hidden;
-    } */
-}
+    } 
+} */
 
 .Sobre {
     margin-top: 10rem;
