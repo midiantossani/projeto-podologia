@@ -1,0 +1,205 @@
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+:root {
+    --main-color: #F7E1D2;
+    --main-green: #373D20;
+    --light-green: #717744;
+    --main-brown: #766153;
+    --main-red: #A41623;
+}
+
+img {
+    width: 100%;
+}
+
+
+body,html {
+    background-color: var(--main-color);
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jost';
+    overflow-x: hidden;
+    height: 100vh;
+    font-size: 1rem;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--main-green);
+}
+
+.header img {
+    width: 200px;
+}
+
+.header .nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header .nav ul li a {
+    color: var(--light-green);
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+.header li + li {
+    margin-left: 2rem;
+}
+
+.header .nav ul li a:hover {
+    background-color: var(--light-green);
+    color: var(--main-color);
+    padding: 5px;
+    border-radius: 2rem;
+}
+
+main {
+    margin: 5rem auto;
+    width: 80vw;
+    text-align: justify;
+    padding: 1.5rem;
+}
+
+h1, h2 {
+    color: var(--light-green);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Italiana';
+    margin-bottom: 5rem;
+}
+
+h1 + p,
+h2 + p,
+.Sobre p {
+    color: #303030;
+}
+
+
+.index::before {
+    content: '';
+    position: absolute;
+    top: 20rem;
+    bottom: 0;
+    left: 5rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folhatropical.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+@media (min-width:480px) and (max-width:760px) {
+    .index::before {
+    content: '';
+    position: absolute;
+    top: 20rem;
+    bottom: 0;
+    left: 1rem;
+    width: 50%; /* largura da imagem de fundo na lateral esquerda */
+    background-image: url(img/folhatropical.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+    }
+
+    /* .index::after {
+    content: '';
+    position: absolute;
+    top: 50rem;
+    bottom: -25rem;
+    right: -5rem;
+    width: 50%;
+    background-image: url(img/folha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    overflow: hidden;
+    } */
+}
+
+.Sobre {
+    margin-top: 10rem;
+}
+
+.Procedimentos {
+    height: max-content;
+    margin-top: 10rem;
+    
+}
+
+.div-card  {
+    display: grid;
+    grid-template-columns: 1fr; /* Mostra os cards em uma única coluna */
+    gap: 1rem;
+}
+
+.card {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 80vw;
+    border-radius: 5px;
+    border-color: #373D20;
+    box-shadow: 1px 1px 0px 1px rgba(75, 75, 75, 0.493);
+    background-color: var(--main-brown);
+    overflow: hidden;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.card p {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    text-align: left;
+}
+
+.card a.seta {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--main-green);
+    color: var(--main-color);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card a.seta:hover {
+    background-color: var(--light-green);
+}
+
+.card a svg {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 10px;
+}
+
+.footer {
+    margin-top: 10rem;
+}
+
+.footer p {
+    text-align: center;
+}
