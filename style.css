@@ -4,6 +4,8 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
 
+/*  MOBILE FIRST */
+
 :root {
     --main-color: #F7E1D2;
     --main-green: #373D20;
@@ -94,7 +96,6 @@ h2 + p,
     position: relative;
 }
 
-
  .index::before {
     content: '';
     position: absolute;
@@ -123,34 +124,12 @@ h2 + p,
     overflow: hidden;
 } 
 
-@media (min-width:480px) and (max-width:760px) {
-    .index::before {
-    content: '';
-    position: absolute;
-    top: 20rem;
-    bottom: 0;
-    left: 1rem;
-    width: 50%; 
-    background-image: url(img/folhatropical.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    
-    }
+.index,
+.Sobre,
+.Procedimentos {
+    margin-bottom: 18rem;
+}
 
-    .index::after {
-    content: '';
-    position: absolute;
-    top: 50rem;
-    bottom: -25rem;
-    right: -5rem;
-    width: 50%;
-    background-image: url(img/folha.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top right;
-    overflow: hidden;
-    } 
-} 
 
 .Sobre {
     margin-top: 10rem;
@@ -185,7 +164,6 @@ h2 + p,
     bottom: 0rem;
     right: -2rem;
     width: 50%;
-    height: 100%;
     background-image: url(img/folha2.png);
     background-repeat: no-repeat;
     background-size: 200%;
@@ -198,7 +176,6 @@ h2 + p,
     bottom: 0rem;
     right: -2rem;
     width: 50%;
-    height: 100%;
     background-image: url(img/Vector.png);
     background-repeat: no-repeat;
     background-size: 200%;
@@ -209,7 +186,7 @@ h2 + p,
 .div-card  {
     display: grid;
     grid-template-columns: 1fr; /* Mostra os cards em uma única coluna */
-    gap: 1rem;
+    gap: 2rem;
     position: relative;
     z-index: 1;
 }
@@ -280,7 +257,7 @@ h2 + p,
 .footer::before {
     content: '';
     position: absolute;
-    top: 8rem;
+    top: 9rem;
     left: -3rem;
     width: 100%;
     height: 100%;
@@ -303,3 +280,425 @@ h2 + p,
  .footer a:hover {
     color: #303030;
  }
+
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .Sobre h2,
+    .Procedimentos h2 {
+        margin-top: 5rem;
+    }
+
+    .header .nav ul li a {
+    font-size: 1.4rem;
+    }
+
+    h1 + p,
+    h2 + p,
+    .Sobre p {
+        font-size: 1.4rem;
+    }
+
+    .index::before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    bottom: 0;
+    left: -8rem;
+    width: 50%; 
+    background-image: url(img/folhatropical.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .index::after {
+    content: '';
+    position: absolute;
+    top: 30rem;
+    right: -8rem;
+    width: 50%;
+    background-image: url(img/folha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    overflow: hidden;
+    } 
+
+    .Sobre::before {
+    top: -10rem;
+    bottom: 0rem;
+    left: -5rem;
+    }
+
+    .Procedimentos::before {
+    content: '';
+    position: absolute;
+    top: -4rem;
+    bottom: 0rem;
+    right: -6rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha2.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    }
+
+    .Procedimentos::after {
+    content: '';
+    position: absolute;
+    top: 9rem;
+    bottom: 0rem;
+    right: -10rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/Vector.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    }
+
+    .div-card  {
+        grid-template-columns: auto /* Mostra os cards em uma única coluna */
+    }
+
+    .card img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .card {
+        width: 50vw;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        height: auto;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card a.seta {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .footer::before {
+    content: '';
+    position: absolute;
+    top: 8rem;
+    left: -11rem;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Group\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center bottom;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .header img {
+        width: 100px;
+    }
+
+    h1, h2 {
+        font-size: 3rem;
+    }
+
+    h1 + p,
+    h2 + p,
+    .Sobre p {
+        font-size: 1.2rem;
+    }
+
+    .index::before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    left: -10rem;
+    width: 50%; 
+    background-image: url(img/folhatropical.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .index::after {
+    content: '';
+    position: absolute;
+    top: 15rem;
+    right: -10rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    overflow: hidden;
+    } 
+
+    .Sobre::before {
+    content: '';
+    position: absolute;
+    top: -4rem;
+    left: -15rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-y: hidden;
+    }
+
+   .Sobre div.container-sobre-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .Sobre img{
+        display: block;
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .Procedimentos::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    bottom: 0rem;
+    right: -15rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .Procedimentos::after {
+    content: '';
+    position: absolute;
+    top: 16rem;
+    bottom: 0rem;
+    right: -18rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/Vector.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    }
+
+    .div-card {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+        gap: 1rem;
+    
+    }
+
+    .card {
+        max-width: 200px; /* Define uma largura máxima para os cartões */
+        height: auto;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .card img {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card a.seta {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .footer::before {
+    content: '';
+    position: absolute;
+    top: 9rem;
+    left: -6rem;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Group\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center left;
+    }
+}
+
+@media (min-width:1025px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+
+    .header .nav ul li a {
+        font-size: 1rem;
+    }
+
+    .header img {
+        width: 100px;
+    }
+
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+
+    h1 + p,
+    h2 + p,
+    .Sobre p {
+        font-size: 1rem;
+        
+    }
+
+    .index::before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    left: -12rem;
+    width: 50%; 
+    background-image: url(img/folhatropical.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .index::after {
+    content: '';
+    position: absolute;
+    top: 20rem;
+    right: -12rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    overflow: hidden;
+    } 
+
+    .Sobre::before {
+    content: '';
+    position: absolute;
+    top: -8rem;
+    left: -25rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-y: hidden;
+    }
+
+    .Sobre div.container-sobre-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .Sobre img{
+        display: block;
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .Procedimentos::before {
+    content: '';
+    position: absolute;
+    top: -8rem;
+    right: -20rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/folha2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .Procedimentos::after {
+    content: '';
+    position: absolute;
+    top: 8rem;
+    bottom: 0rem;
+    right: -25rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/Vector.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    }
+
+    .div-card {
+         
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste as colunas para se encaixarem automaticamente */
+        gap: 1rem;
+    
+    }
+
+    .card {
+        max-width: 200px; /* Define uma largura máxima para os cartões */
+        height: auto;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .card img {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+
+    .card a.seta {
+        font-size: 0.6rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .footer::before {
+    content: '';
+    position: absolute;
+    top: 13rem;
+    left: -7rem;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/Group\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center left;
+    }
+
+    .footer svg{
+        height: 50px;
+    }
+}
