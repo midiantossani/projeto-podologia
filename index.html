@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <header >
+    <header>
       <div class="header">
         <a href="#">
-          <img
-          src="logo.png" alt="logo" />
+          <img src="logo.png" alt="logo" />
         </a>
         <nav class="nav">
           <ul class="list">
@@ -28,100 +30,249 @@
     <main>
       <section class="index">
         <h1>Title</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus, nisi harum aut cumque temporibus. Pariatur ducimus fugit perferendis necessitatibus voluptatum veritatis aut doloremque sunt, tempore est sed vitae. Voluptatum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, minus reiciendis repellendus est temporibus laudantium! Quo, voluptate. Illum tempora, accusamus quam, odit officiis ipsum id vitae, iste molestias eum voluptates.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          necessitatibus, nisi harum aut cumque temporibus. Pariatur ducimus
+          fugit perferendis necessitatibus voluptatum veritatis aut doloremque
+          sunt, tempore est sed vitae. Voluptatum. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Iure, minus reiciendis repellendus est
+          temporibus laudantium! Quo, voluptate. Illum tempora, accusamus quam,
+          odit officiis ipsum id vitae, iste molestias eum voluptates.
         </p>
       </section>
 
       <section id="Sobre" class="Sobre">
         <div class="container-sobre">
-          <h2>Sobre mim</h2>
+          <h2 class="slide-in-left">Sobre mim</h2>
           <div class="container-sobre-img">
-            <img
-            src="Design_sem_nome-removebg-preview.png" alt="">
-            <p>Olá! Meu nome é Jennifer Tossani de Souza, tenho 30 anos e sou uma podóloga apaixonada pela minha profissão. Nascida e criada em São José dos Campos, encontrei na área da podologia minha verdadeira vocação há oito anos.
-            <br>
-            <br>
-            Com uma abordagem holística e dedicada, meu objetivo é proporcionar cuidados abrangentes e personalizados para a saúde dos pés dos meus pacientes. Acredito que cada pé tem sua própria história e necessidades únicas, e estou comprometida em oferecer tratamentos eficazes e confortáveis para garantir o bem-estar e a saúde dos meus clientes.
-            <br>
-            <br>
-            Seja para tratar problemas específicos, como calosidades, unhas encravadas ou fissuras, ou simplesmente para manter a saúde e a beleza dos pés em dia, estou aqui para ajudar. Agende uma consulta e conheça mais sobre cada Procedimento!
+            <img src="img/sobre.jpg" alt="sobre-img" class="fade-in" />
+            <p class="slide-in-right">
+              Olá! Meu nome é Jennifer Tossani de Souza, tenho 30 anos e sou uma
+              podóloga apaixonada pela minha profissão. Nascida e criada em São
+              José dos Campos, encontrei na área da podologia minha verdadeira
+              vocação há oito anos.
+              <br />
+              <br />
+              Com uma abordagem holística e dedicada, meu objetivo é
+              proporcionar cuidados abrangentes e personalizados para a saúde
+              dos pés dos meus pacientes. Acredito que cada pé tem sua própria
+              história e necessidades únicas, e estou comprometida em oferecer
+              tratamentos eficazes e confortáveis para garantir o bem-estar e a
+              saúde dos meus clientes.
+              <br />
+              <br />
+              Seja para tratar problemas específicos, como calosidades, unhas
+              encravadas ou fissuras, ou simplesmente para manter a saúde e a
+              beleza dos pés em dia, estou aqui para ajudar. Agende uma consulta
+              e conheça mais sobre cada Procedimento!
             </p>
           </div>
         </div>
-        
       </section>
 
+      <section id="Procedimentos" class="Procedimentos">
+        <h2>Procedimentos</h2>
+        <!-- Card Component -->
+        <div class="div-card">
+          <div class="card">
+            <a href="#">
+              <img src="Design_sem_nome-removebg-preview.png" alt="" />
+            </a>
+            <div>
+              <a href="#">
+                <h3>Unha Encravada</h3>
+              </a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                dolores, fugit modi rerum sint fugiat nam nesciunt, sit
+                recusandae esse hic aut quisquam sed quasi, incidunt consectetur
+                libero adipisci nulla?
+              </p>
+              <a href="#" class="seta">
+                Saiba mais
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img src="Design_sem_nome-removebg-preview.png" alt="" />
+            </a>
+            <div>
+              <a href="#">
+                <h3>Unha Encravada</h3>
+              </a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                dolores, fugit modi rerum sint fugiat nam nesciunt, sit
+                recusandae esse hic aut quisquam sed quasi, incidunt consectetur
+                libero adipisci nulla?
+              </p>
+              <a href="#" class="seta">
+                Saiba mais
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
 
-    <section id="Procedimentos" class="Procedimentos">
-    <h2>Procedimentos</h2>
-    <!-- Card Component -->
-    <div class="div-card">
-      <div class="card">
-      <a href="#">
-        <img src="Design_sem_nome-removebg-preview.png" alt="">
-      </a>
-      <div>
-          <a href="#">
-            <h3>Unha Encravada</h3>
-          </a>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga dolores, fugit modi rerum sint fugiat nam nesciunt, sit recusandae esse hic aut quisquam sed quasi, incidunt consectetur libero adipisci nulla?</p>
-          <a href="#" class="seta">
-              Saiba mais
-               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-          </a>
-      </div>
-      </div>
-      <div class="card">
-      <a href="#">
-        <img src="Design_sem_nome-removebg-preview.png" alt="">
-      </a>
-      <div>
-          <a href="#">
-            <h3>Unha Encravada</h3>
-          </a>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga dolores, fugit modi rerum sint fugiat nam nesciunt, sit recusandae esse hic aut quisquam sed quasi, incidunt consectetur libero adipisci nulla?</p>
-          <a href="#" class="seta">
-              Saiba mais
-               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-          </a>
-      </div>
-      </div>
-      
-        <div class="card">
-      <a href="#">
-        <img src="Design_sem_nome-removebg-preview.png" alt="">
-      </a>
-      <div>
-          <a href="#">
-            <h3>Unha Encravada</h3>
-          </a>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga dolores, fugit modi rerum sint fugiat nam nesciunt, sit recusandae esse hic aut quisquam sed quasi, incidunt consectetur libero adipisci nulla?</p>
-          <a href="#" class="seta">
-              Saiba mais
-               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-          </a>
-      </div>
-      </div>
-    </div>
+          <div class="card">
+            <a href="#">
+              <img src="Design_sem_nome-removebg-preview.png" alt="" />
+            </a>
+            <div>
+              <a href="#">
+                <h3>Unha Encravada</h3>
+              </a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                dolores, fugit modi rerum sint fugiat nam nesciunt, sit
+                recusandae esse hic aut quisquam sed quasi, incidunt consectetur
+                libero adipisci nulla?
+              </p>
+              <a href="#" class="seta">
+                Saiba mais
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer id="Contato" class="footer">
-        <h2>Gostou?</h2>
-        <p>Entre em contato e agende uma consulta!</p>
+        <div id="footer" class="fade-in">
+          <h2>Gostou?</h2>
+          <p>Entre em contato e agende uma consulta!</p>
           <a href="https://wa.me/12991289592">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,255.99265,255.99265" width="75px" height="75px"><g fill="#373d20" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,8c-9.389,0 -17,7.611 -17,17c0,3.127 0.85903,6.04745 2.33203,8.56445l-2.18555,8.1582l8.53711,-1.9043c2.46,1.383 5.29341,2.18164 8.31641,2.18164c9.389,0 17,-7.611 17,-17c0,-9.389 -7.611,-17 -17,-17zM25,9c8.802,0 16,7.198 16,16c0,8.802 -7.198,16 -16,16c-2.997,0 -5.7593,-0.80223 -8.1543,-2.24023l-7.30078,1.62305l1.86133,-6.96094c-1.535,-2.45 -2.40625,-5.31687 -2.40625,-8.42187c0,-8.802 7.198,-16 16,-16zM18.80078,16.54883c-0.302,0 -0.78717,0.11055 -1.20117,0.56055c-0.407,0.45 -1.56641,1.53214 -1.56641,3.74414c0,2.204 1.60312,4.34077 1.82813,4.63477c0.225,0.302 3.10297,4.97934 7.66797,6.77734c3.784,1.49 4.55772,1.19419 5.38672,1.11719c0.821,-0.071 2.65434,-1.08291 3.02734,-2.12891c0.373,-1.047 0.37281,-1.94672 0.25781,-2.13672c-0.114,-0.182 -0.40742,-0.29258 -0.85742,-0.51758c-0.45,-0.225 -2.65631,-1.31294 -3.07031,-1.46094c-0.408,-0.148 -0.70991,-0.22539 -1.00391,0.22461c-0.302,0.45 -1.15683,1.46186 -1.42383,1.75586c-0.259,0.302 -0.51875,0.33633 -0.96875,0.11133c-0.45,-0.225 -1.89833,-0.69556 -3.61133,-2.22656c-1.333,-1.187 -2.23219,-2.65552 -2.49219,-3.10352c-0.26,-0.448 -0.02773,-0.69492 0.19727,-0.91992c0.204,-0.196 0.44883,-0.5193 0.67383,-0.7793c0.217,-0.267 0.29536,-0.44995 0.44336,-0.75195c0.155,-0.294 0.07684,-0.56016 -0.03516,-0.78516c-0.112,-0.225 -0.98281,-2.44312 -1.38281,-3.32812c-0.336,-0.744 -0.68872,-0.76544 -1.01172,-0.77344c-0.262,-0.014 -0.56342,-0.01367 -0.85742,-0.01367z"></path></g></g></svg>
-           Clique aqui
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="0 0 48 48"
+              id="Layer_2"
+              data-name="Layer 2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #373d20;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                  }
+                </style>
+              </defs>
+              <path
+                class="cls-1"
+                d="M24,2.5A21.52,21.52,0,0,0,5.15,34.36L2.5,45.5l11.14-2.65A21.5,21.5,0,1,0,24,2.5ZM13.25,12.27h5.86a1,1,0,0,1,1,1,10.4,10.4,0,0,0,.66,3.91,1.93,1.93,0,0,1-.66,2.44l-2.05,2a18.6,18.6,0,0,0,3.52,4.79A18.6,18.6,0,0,0,26.35,30l2-2.05c1-1,1.46-1,2.44-.66a10.4,10.4,0,0,0,3.91.66,1.05,1.05,0,0,1,1,1v5.86a1.05,1.05,0,0,1-1,1,23.68,23.68,0,0,1-15.64-6.84,23.6,23.6,0,0,1-6.84-15.64A1.07,1.07,0,0,1,13.25,12.27Z"
+              />
+            </svg>
+            Clique aqui
           </a>
-          <p style="margin-top: 5rem;">WhatsApp icon by Icons8</p>
-
-        </footer>
+        </div>
+      </footer>
     </main>
+
+    <script>
+      const elements = document.querySelectorAll("img, p, h2");
+
+      // Configurações do IntersectionObserver
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      };
+
+      // Função de callback para observar as mudanças de interseção
+      const handleIntersection = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible"); // Adiciona a classe que torna o elemento visível
+            observer.unobserve(entry.target); // Interrompe a observação deste elemento
+          }
+        });
+      };
+
+      // Cria uma nova instância do IntersectionObserver
+      const observer = new IntersectionObserver(handleIntersection, options);
+
+      // Observa cada elemento alvo
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+
+      // Selecione o elemento do footer
+      const footer = document.getElementById("footer");
+
+      // Função para verificar se o Contato está visível na página
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // Função para adicionar a classe fade-in quando o Contato estiver visível
+      function addFadeInClass() {
+        if (isElementInViewport(contato)) {
+          contato.classList.add("fade-in");
+          // Remova o listener após a animação ocorrer
+          window.removeEventListener("scroll", addFadeInClass);
+        }
+      }
+
+      // Adicione um listener para o evento scroll
+      window.addEventListener("scroll", addFadeInClass);
+
+      // Verifique se o Contato está visível quando a página é carregada
+      addFadeInClass();
+    </script>
   </body>
 </html>

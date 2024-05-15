@@ -7,312 +7,411 @@
 /*  MOBILE FIRST */
 
 :root {
-    --main-color: #F7E1D2;
-    --main-green: #373D20;
-    --light-green: #717744;
-    --main-brown: #766153;
-    --main-red: #A41623;
+  --main-color: #f7e1d2;
+  --main-green: #373d20;
+  --light-green: #717744;
+  --main-brown: #766153;
+  --main-red: #a41623;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
-
-body,html {
-    background-color: var(--main-color);
-    display: block;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Jost';
-    overflow-x: hidden;
-    height: 100vh;
-    font-size: 1rem;
-    
+body,
+html {
+  background-color: var(--main-color);
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Jost";
+  overflow-x: hidden;
+  height: 100vh;
+  font-size: 1rem;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    margin: 0 auto;
-    border-bottom: 1px solid var(--main-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--main-green);
 }
 
 .header img {
-    width: 200px;
+  width: 200px;
 }
 
 .header .nav ul {
-    display: flex;
-    list-style: none;
-    text-align: center;
-    padding: 1rem;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
 }
 
 .header .nav ul li a {
-    color: var(--light-green);
-    font-size: 1.2rem;
-    text-decoration: none;
-
+  color: var(--light-green);
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .header li + li {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .header .nav ul li a:hover {
-    background-color: var(--light-green);
-    color: var(--main-color);
-    padding: 5px;
-    border-radius: 2rem;
+  background-color: var(--light-green);
+  color: var(--main-color);
+  padding: 5px;
+  border-radius: 2rem;
 }
 
 main {
-    margin: 5rem auto;
-    width: 80vw;
-    text-align: justify;
-    padding: 1.5rem;
+  margin: 5rem auto;
+  width: 80vw;
+  text-align: justify;
+  padding: 1.5rem;
 }
 
-h1, h2 {
-    color: var(--light-green);
-    text-align: center;
-    font-size: 2.8rem;
-    font-family: 'Italiana';
-    margin-bottom: 5rem;
+h1,
+h2 {
+  color: var(--light-green);
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: "Italiana";
+  margin-bottom: 5rem;
 }
 
 h1 + p,
 h2 + p,
 .Sobre p {
-    color: #303030;
-    font-size: 1.2rem;
+  color: #303030;
+  font-size: 1.2rem;
 }
 
 .index {
-    position: relative;
+  position: relative;
 }
 
- .index::before {
-    content: '';
-    position: absolute;
-    top: -4rem;
-    bottom: 0;
-    left: -7rem;
-    width: 50%;
-    height: 100%;
-    background-image: url(img/folhatropical.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+.index::before {
+  content: "";
+  position: absolute;
+  top: -4rem;
+  bottom: 0;
+  left: -7rem;
+  width: 50%;
+  height: 100%;
+  background-image: url(img/folhatropical.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
- .index::after {
-    content: '';
-    position: absolute;
-    top: 30rem;
-    bottom: 0rem;
-    right: -6rem;
-    width: 50%;
-    height: 100%;
-    background-image: url(img/folha.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top right;
-    overflow: hidden;
-} 
+.index::after {
+  content: "";
+  position: absolute;
+  top: 30rem;
+  bottom: 0rem;
+  right: -6rem;
+  width: 50%;
+  height: 100%;
+  background-image: url(img/folha.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  overflow: hidden;
+}
 
 .index,
 .Sobre,
 .Procedimentos {
-    margin-bottom: 18rem;
+  margin-bottom: 18rem;
 }
 
+.Sobre img {
+  display: block;
+  margin: 5rem auto;
+  border-radius: 100%;
+  width: 60vw;
+}
+
+/* .Sobre img.fade-in {
+	-webkit-animation: fade-in 2.5s ease-in-out 0.5s both;
+	        animation: fade-in 2.5s ease-in-out 0.5s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
 
 .Sobre {
-    margin-top: 10rem;
-    position: relative;
+  margin-top: 10rem;
+  position: relative;
 }
 
 .Sobre::before {
-    content: '';
-    position: absolute;
-    top: -3rem;
-    bottom: 0rem;
-    left: -6rem;
-    width: 50%;
-    height: 100%;
-    background-image: url(img/folha1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    overflow-y: hidden;
+  content: "";
+  position: absolute;
+  top: -3rem;
+  bottom: 0rem;
+  left: -6rem;
+  width: 50%;
+  height: 100%;
+  background-image: url(img/folha1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow-y: hidden;
 }
 
 .Procedimentos {
-    height: max-content;
-    margin-top: 10rem;
-    position: relative;
-    
+  height: max-content;
+  margin-top: 10rem;
+  position: relative;
 }
 
 .Procedimentos::before {
-    content: '';
-    position: absolute;
-    top: -7rem;
-    bottom: 0rem;
-    right: -2rem;
-    width: 50%;
-    background-image: url(img/folha2.png);
-    background-repeat: no-repeat;
-    background-size: 200%;
+  content: "";
+  position: absolute;
+  top: -7rem;
+  bottom: 0rem;
+  right: -2rem;
+  width: 50%;
+  background-image: url(img/folha2.png);
+  background-repeat: no-repeat;
+  background-size: 200%;
 }
 
 .Procedimentos::after {
-    content: '';
-    position: absolute;
-    top: 9rem;
-    bottom: 0rem;
-    right: -2rem;
-    width: 50%;
-    background-image: url(img/Vector.png);
-    background-repeat: no-repeat;
-    background-size: 200%;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 9rem;
+  bottom: 0rem;
+  right: -2rem;
+  width: 50%;
+  background-image: url(img/Vector.png);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  z-index: 0;
 }
 
-
-.div-card  {
-    display: grid;
-    grid-template-columns: 1fr; /* Mostra os cards em uma única coluna */
-    gap: 2rem;
-    position: relative;
-    z-index: 1;
+.div-card {
+  display: grid;
+  grid-template-columns: 1fr; /* Mostra os cards em uma única coluna */
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .card {
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 80vw;
-    border-radius: 5px;
-    border-color: #373D20;
-    box-shadow: 1px 1px 0px 1px rgba(75, 75, 75, 0.493);
-    background-color: var(--main-brown);
-    overflow: hidden;
-    
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  max-width: 80vw;
+  border-radius: 5px;
+  border-color: #373d20;
+  box-shadow: 1px 1px 0px 1px rgba(75, 75, 75, 0.493);
+  background-color: var(--main-brown);
+  overflow: hidden;
+}
+
+.card a {
+  text-decoration: none;
 }
 
 .card h3 {
-    font-size: 2rem;
-    color: var(--main-color);
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .card p {
-    font-size: 1.4rem;
-    color: var(--main-color);
-    text-align: left;
+  font-size: 1.2rem;
+  color: var(--main-color);
+  text-align: left;
 }
 
 .card a.seta {
-    display: inline-flex;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--main-green);
-    color: var(--main-color);
-    font-size: 1.2rem;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--main-green);
+  color: var(--main-color);
+  font-size: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .card a.seta:hover {
-    background-color: var(--light-green);
+  background-color: var(--light-green);
 }
 
 .card a svg {
-    width: 1rem;
-    height: 1rem;
-    margin-left: 10px;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 10px;
 }
 
 .footer {
-    margin-top: 10rem;
-    position: relative;
-    height: 40vh;
+  margin-top: 10rem;
+  position: relative;
+  height: 40vh;
+}
+
+.fade-in,
+.slide-in-left,
+.slide-in-right {
+  opacity: 0;
+  transition: opacity 2s ease, transform 1s ease;
+  transform: translateY(100px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  animation: fade-in 2.5s ease-in-out 0.5s both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.footer div.fade-in {
+  animation: fade-in 2s ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .footer h2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer p {
-    text-align: center;
+  text-align: center;
 }
 
 .footer::before {
-    content: '';
-    position: absolute;
-    top: 9rem;
-    left: -3rem;
-    width: 100%;
-    height: 100%;
-    background-image: url(img/Group\ 4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    
- }
+  content: "";
+  position: absolute;
+  top: 9rem;
+  left: -3rem;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/Group\ 4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
 
- .footer a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: var(--light-green);    
- }
+.footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--light-green);
+}
 
- .footer a:hover {
-    color: #303030;
- }
+.footer a:hover {
+  color: #303030;
+}
 
-
+.footer svg {
+  width: 50px;
+  height: 150px;
+  margin-right: 1rem;
+}
 
 @media (min-width: 480px) and (max-width: 768px) {
-    .Sobre h2,
-    .Procedimentos h2 {
-        margin-top: 5rem;
-    }
+  .Sobre h2,
+  .Procedimentos h2 {
+    margin-top: 5rem;
+  }
 
-    .header .nav ul li a {
+  .header .nav ul li a {
     font-size: 1.4rem;
-    }
+  }
 
-    h1 + p,
-    h2 + p,
-    .Sobre p {
-        font-size: 1.4rem;
-    }
+  h1 + p,
+  h2 + p,
+  .Sobre p {
+    font-size: 1.4rem;
+  }
 
-    .index::before {
-    content: '';
+  .index::before {
+    content: "";
     position: absolute;
     top: -3rem;
     bottom: 0;
     left: -8rem;
-    width: 50%; 
+    width: 50%;
     background-image: url(img/folhatropical.png);
     background-repeat: no-repeat;
     background-size: contain;
-    }
+  }
 
-    .index::after {
-    content: '';
+  .index::after {
+    content: "";
     position: absolute;
     top: 30rem;
     right: -8rem;
@@ -322,16 +421,23 @@ h2 + p,
     background-size: contain;
     background-position: top right;
     overflow: hidden;
-    } 
+  }
 
-    .Sobre::before {
+  .Sobre img {
+    display: block;
+    margin-left: 5rem;
+    border-radius: 100%;
+    width: 50vw;
+  }
+
+  .Sobre::before {
     top: -10rem;
     bottom: 0rem;
     left: -5rem;
-    }
+  }
 
-    .Procedimentos::before {
-    content: '';
+  .Procedimentos::before {
+    content: "";
     position: absolute;
     top: -4rem;
     bottom: 0rem;
@@ -341,10 +447,10 @@ h2 + p,
     background-image: url(img/folha2.png);
     background-repeat: no-repeat;
     background-size: 150%;
-    }
+  }
 
-    .Procedimentos::after {
-    content: '';
+  .Procedimentos::after {
+    content: "";
     position: absolute;
     top: 9rem;
     bottom: 0rem;
@@ -355,40 +461,40 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0;
-    }
+  }
 
-    .div-card  {
-        grid-template-columns: auto /* Mostra os cards em uma única coluna */
-    }
+  .div-card {
+    grid-template-columns: auto; /* Mostra os cards em uma única coluna */
+  }
 
-    .card img {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-    }
+  .card img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
 
-    .card {
-        width: 50vw;
-        padding: 0 1.5rem 1.5rem 1.5rem;
-        height: auto;
-    }
+  .card {
+    width: 50vw;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    height: auto;
+  }
 
-    .card p {
-        font-size: 1.2rem;
-    }
+  .card p {
+    font-size: 1.2rem;
+  }
 
-    .card h3 {
-        font-size: 1.4rem;
-    }
+  .card h3 {
+    font-size: 1.4rem;
+  }
 
-    .card a.seta {
-        font-size: 1rem;
-        padding: 0.8rem;
-    }
+  .card a.seta {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
 
-    .footer::before {
-    content: '';
+  .footer::before {
+    content: "";
     position: absolute;
     top: 8rem;
     left: -11rem;
@@ -398,41 +504,42 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center bottom;
-    }
+  }
 }
 
-@media (min-width:769px) and (max-width:1024px) {
-    .header {
-        flex-direction: row;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+  }
 
-    .header img {
-        width: 100px;
-    }
+  .header img {
+    width: 100px;
+  }
 
-    h1, h2 {
-        font-size: 3rem;
-    }
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
 
-    h1 + p,
-    h2 + p,
-    .Sobre p {
-        font-size: 1.2rem;
-    }
+  h1 + p,
+  h2 + p,
+  .Sobre p {
+    font-size: 1.2rem;
+  }
 
-    .index::before {
-    content: '';
+  .index::before {
+    content: "";
     position: absolute;
     top: -3rem;
     left: -10rem;
-    width: 50%; 
+    width: 50%;
     background-image: url(img/folhatropical.png);
     background-repeat: no-repeat;
     background-size: contain;
-    }
+  }
 
-    .index::after {
-    content: '';
+  .index::after {
+    content: "";
     position: absolute;
     top: 15rem;
     right: -10rem;
@@ -443,10 +550,10 @@ h2 + p,
     background-size: contain;
     background-position: top right;
     overflow: hidden;
-    } 
+  }
 
-    .Sobre::before {
-    content: '';
+  .Sobre::before {
+    content: "";
     position: absolute;
     top: -4rem;
     left: -15rem;
@@ -456,23 +563,23 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: contain;
     overflow-y: hidden;
-    }
+  }
 
-   .Sobre div.container-sobre-img {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  .Sobre div.container-sobre-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    }
+  .Sobre img {
+    display: block;
+    width: 60%;
+    margin: 5rem auto;
+  }
 
-    .Sobre img{
-        display: block;
-        width: 45%;
-        margin: 0 auto;
-    }
-
-    .Procedimentos::before {
-    content: '';
+  .Procedimentos::before {
+    content: "";
     position: absolute;
     top: -2rem;
     bottom: 0rem;
@@ -482,10 +589,10 @@ h2 + p,
     background-image: url(img/folha2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    }
+  }
 
-    .Procedimentos::after {
-    content: '';
+  .Procedimentos::after {
+    content: "";
     position: absolute;
     top: 16rem;
     bottom: 0rem;
@@ -496,45 +603,43 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0;
-    }
+  }
 
-    .div-card {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        justify-content: center;
-        gap: 1rem;
-    
-    }
+  .div-card {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    .card {
-        max-width: 200px; /* Define uma largura máxima para os cartões */
-        height: auto;
-        padding: 0 1rem 1rem 1rem;
-    }
+  .card {
+    max-width: 200px; /* Define uma largura máxima para os cartões */
+    height: auto;
+    padding: 0 1rem 1rem 1rem;
+  }
 
-    .card img {
-        max-width: 80%;
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        
-    }
+  .card img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
 
-    .card p {
-        font-size: 0.9rem;
-    }
+  .card p {
+    font-size: 0.9rem;
+  }
 
-    .card h3 {
-        font-size: 1rem;
-    }
+  .card h3 {
+    font-size: 1rem;
+  }
 
-    .card a.seta {
-        font-size: 0.7rem;
-        padding: 0.5rem;
-        border-radius: 5px;
-    }
+  .card a.seta {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
 
-    .footer::before {
-    content: '';
+  .footer::before {
+    content: "";
     position: absolute;
     top: 9rem;
     left: -6rem;
@@ -544,51 +649,51 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center left;
-    }
+  }
 }
 
-@media (min-width:1025px) {
-    .header {
-        display: flex;
-        flex-direction: row;
-        padding: 0 1rem;
-    }
+@media (min-width: 1025px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem;
+  }
 
-    .header .nav ul li a {
-        font-size: 1rem;
-    }
+  .header .nav ul li a {
+    font-size: 1rem;
+  }
 
-    .header img {
-        width: 100px;
-    }
+  .header img {
+    width: 100px;
+  }
 
-    h1, h2 {
-        font-size: 2.5rem;
-    }
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
 
-    h1 + p,
-    h2 + p,
-    .Sobre p {
-        font-size: 1rem;
-        
-    }
+  h1 + p,
+  h2 + p,
+  .Sobre p {
+    font-size: 1.2rem;
+  }
 
-    .index::before {
-    content: '';
+  .index::before {
+    content: "";
     position: absolute;
     top: -3rem;
     left: -12rem;
-    width: 50%; 
+    width: 50%;
     background-image: url(img/folhatropical.png);
     background-repeat: no-repeat;
     background-size: contain;
-    }
+  }
 
-    .index::after {
-    content: '';
+  .index::after {
+    content: "";
     position: absolute;
     top: 20rem;
-    right: -12rem;
+    right: -13rem;
     width: 50%;
     height: 100%;
     background-image: url(img/folha.png);
@@ -596,10 +701,10 @@ h2 + p,
     background-size: contain;
     background-position: top right;
     overflow: hidden;
-    } 
+  }
 
-    .Sobre::before {
-    content: '';
+  .Sobre::before {
+    content: "";
     position: absolute;
     top: -8rem;
     left: -25rem;
@@ -609,23 +714,22 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: contain;
     overflow-y: hidden;
-    }
+  }
 
-    .Sobre div.container-sobre-img {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  .Sobre div.container-sobre-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    }
+  .Sobre img {
+    display: block;
+    width: 40%;
+    margin: auto 4rem;
+  }
 
-    .Sobre img{
-        display: block;
-        width: 45%;
-        margin: 0 auto;
-    }
-
-    .Procedimentos::before {
-    content: '';
+  .Procedimentos::before {
+    content: "";
     position: absolute;
     top: -8rem;
     right: -20rem;
@@ -634,10 +738,10 @@ h2 + p,
     background-image: url(img/folha2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    }
+  }
 
-    .Procedimentos::after {
-    content: '';
+  .Procedimentos::after {
+    content: "";
     position: absolute;
     top: 8rem;
     bottom: 0rem;
@@ -648,45 +752,45 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 0;
-    }
+  }
 
-    .div-card {
-         
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste as colunas para se encaixarem automaticamente */
-        gap: 1rem;
-    
-    }
+  .div-card {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); /* Ajuste as colunas para se encaixarem automaticamente */
+    gap: 1rem;
+  }
 
-    .card {
-        max-width: 200px; /* Define uma largura máxima para os cartões */
-        height: auto;
-        padding: 0 1rem 1rem 1rem;
-    }
+  .card {
+    max-width: 200px; /* Define uma largura máxima para os cartões */
+    height: auto;
+    padding: 0 1rem 1rem 1rem;
+  }
 
-    .card img {
-        max-width: 80%;
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        
-    }
+  .card img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
 
-    .card p {
-        font-size: 0.8rem;
-    }
+  .card p {
+    font-size: 0.8rem;
+  }
 
-    .card h3 {
-        font-size: 1rem;
-    }
+  .card h3 {
+    font-size: 1rem;
+  }
 
-    .card a.seta {
-        font-size: 0.6rem;
-        padding: 0.5rem;
-        border-radius: 5px;
-    }
+  .card a.seta {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
 
-    .footer::before {
-    content: '';
+  .footer::before {
+    content: "";
     position: absolute;
     top: 13rem;
     left: -7rem;
@@ -696,9 +800,5 @@ h2 + p,
     background-repeat: no-repeat;
     background-size: 120%;
     background-position: center left;
-    }
-
-    .footer svg{
-        height: 50px;
-    }
+  }
 }
